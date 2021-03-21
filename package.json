@@ -1,0 +1,45 @@
+{
+  "name": "eth-utils",
+  "version": "1.0.0",
+  "description": "Various utilities for ETH.",
+  "main": "./src/app.js",
+  "author": {
+    "name": "Mia Corvere"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "test": "ts-mocha -p ./tsconfig.json --paths ./test/**/*.spec.ts",
+    "fix-balance-sheet": "node --require ts-node/register -r tsconfig-paths/register ./src/app.ts fix-balance-sheet"
+  },
+  "dependencies": {
+    "@ethersproject/abstract-provider": "^5.0.0-beta",
+    "@ethersproject/address": "^5.0.0-beta",
+    "@ethersproject/contracts": "^5.0.0-beta",
+    "@ethersproject/hardware-wallets": "^5.0.0-beta",
+    "@ethersproject/networks": "^5.0.8",
+    "@ethersproject/providers": "^5.0.0-beta",
+    "@ethersproject/solidity": "^5.0.0-beta",
+    "@ethersproject/wallet": "^5.0.0-beta",
+    "@uniswap/sdk": "^3.0.3",
+    "chai": "^4.3.0",
+    "clipboardy": "^2.3.0",
+    "got": "^9.6.0",
+    "prompts": "^2.4.0",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "xmldom": "^0.4.0",
+    "xpath": "0.0.32",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/expect": "^24.3.0",
+    "@types/got": "^9.6.11",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^8.0.14",
+    "@types/yargs": "^16.0.0",
+    "mocha": "^8.3.0",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^3.9.9"
+  }
+}
